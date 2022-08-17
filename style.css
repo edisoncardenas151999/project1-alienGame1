@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+   
+}
+
+#splash{
+    width:800px;
+    height:400px;
+    margin:auto;
+    padding-left: 30px;
+    padding-bottom: 50px;
+    position: fixed;
+    margin-top: -120px;
+    left: 300px;
+    background-image: url('https://i.pinimg.com/originals/05/10/f4/0510f4e596283c0d961e4338565a93f3.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+ 
+}
+
+#game {
+    width:800px;
+    height:400px;
+    margin: auto;
+    background-image: url('https://i.pinimg.com/originals/05/10/f4/0510f4e596283c0d961e4338565a93f3.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    padding-bottom: 50px;
+  
+   
+
+   
+}
+#character {
+    width: 50px;
+    height: 70px;
+    position: relative;
+    top: 350px;
+    background-image: url('https://thumbs.gfycat.com/MildFlashyAurochs-size_restricted.gif');
+    background-size: cover;
+    background-repeat: no-repeat;   
+
+    
+    
+   
+    
+}
+
+ .animate{   
+   animation: jump 500ms ;
+}
+@keyframes jump {
+    0%{top:300px;}
+    30%{top:200px;}
+    70%{top:200px;}
+    100%{top:300px;}
+}
+
+#block {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 300px;
+    left: 460px;
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/36132755-33d2-46f6-8b2f-241392fdc7b0/d4odt5v-9d478856-9ce7-4e55-8236-cebf7c5c25b5.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzM2MTMyNzU1LTMzZDItNDZmNi04YjJmLTI0MTM5MmZkYzdiMFwvZDRvZHQ1di05ZDQ3ODg1Ni05Y2U3LTRlNTUtODIzNi1jZWJmN2M1YzI1YjUuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.8W4bX4HEqaZfvU05oVLuKgMyvyZcQpm8DuFTR-dB7nQ');
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: block 1.5s infinite 
+    
+}
+ @keyframes block {
+    0%{left:750px;}
+    100%{left:-20px;}
+} 
+p{
+    text-align: center;
+    font-family: monospace;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.pressStart {
+    color: rgb(5, 234, 250);
+    font-size: medium;
+}
