@@ -67,7 +67,7 @@
     background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/36132755-33d2-46f6-8b2f-241392fdc7b0/d4odt5v-9d478856-9ce7-4e55-8236-cebf7c5c25b5.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzM2MTMyNzU1LTMzZDItNDZmNi04YjJmLTI0MTM5MmZkYzdiMFwvZDRvZHQ1di05ZDQ3ODg1Ni05Y2U3LTRlNTUtODIzNi1jZWJmN2M1YzI1YjUuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.8W4bX4HEqaZfvU05oVLuKgMyvyZcQpm8DuFTR-dB7nQ');
     background-size: cover;
     background-repeat: no-repeat;
-    animation: block 1.5s infinite 
+   
     
 }
  @keyframes block {

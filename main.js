@@ -20,6 +20,7 @@ function remove(){
  let splash = document.getElementById('splash')
  splash.remove()
  block.style.animation = 'block 1.5s infinite'
+ block.style.animationTimingFunction = 'linear'
  start()
 backgroundAudio.play();
 }
@@ -77,9 +78,7 @@ let detectCollision = setInterval(function(){
   
 }
 
-// if(gameSpeed === 5){
-//   block.style.animation = 'block .3s Infinite'
-// }
+
 
 
 //TODO: MAKE A IF STATEMENT THAT INCREASES THE SPEED OF THE BLOCK EVERY TIME THE SCORE IS DOUBLED
@@ -89,13 +88,13 @@ let detectCollision = setInterval(function(){
 
 
   
-// if (counter === 5){
+// if (counter.innerHTML === 5){
 //   block.style.animation = 'block 1s infinite '
 // }
-// else if (counter === 10){
+// else if (counter.innerHTML === 10){
 //   block.style.animation = 'block .5s infinite '
 // }
-// else if(counter === 20){
+// else if(counter.innerHTML === 20){
 //   block.style.animation = 'block .3s infinite '
 
 // }
