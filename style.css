@@ -41,14 +41,9 @@
     background-image: url('https://thumbs.gfycat.com/MildFlashyAurochs-size_restricted.gif');
     background-size: cover;
     background-repeat: no-repeat;   
-
-    
-    
-   
-    
 }
 
- .animate{   
+ .animationJump{   
    animation: jump 500ms ;
 }
 @keyframes jump {
@@ -85,17 +80,8 @@ p{
     color: #fff;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
-    animation: blinker 2s linear infinite;
+    animation: blinker 3s linear infinite;
 }
-/* @keyframes glow {
-    from {
-      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
-    }
-    to {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0073e6, 0 0 40px #0073e6, 0 0 50px #0073e6, 0 0 60px #0073e6, 0 0 70px #0073e6;
-    }
-  } */
-
   @keyframes blinker {
     50% {
       opacity: 0;

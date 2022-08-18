@@ -2,6 +2,8 @@ let character = document.getElementById("character");
 let block = document.getElementById("block");
 let counter = 0;
 
+
+
 const backgroundAudio = new Audio();
 backgroundAudio.src =
   "http://docs.google.com/uc?export=open&id=12HIvC0ZOlUdVEk9TsvVbJit3xY3JRisE";
@@ -18,19 +20,19 @@ if (document.getElementById("splash")) {
 function remove() {
   let splash = document.getElementById("splash");
   splash.remove();
-  block.style.animation = "block 1.5s infinite";
+  block.style.animation = "block 2s infinite";
   block.style.animationTimingFunction = "linear";
   startGame();
   backgroundAudio.play();
+  
 }
-
 function startGame() {
   function jumpCharacter() {
-    if (character.classList != "animate") {
-      character.classList.add("animate");
+    if (character.classList != "animationJump") {
+      character.classList.add("animationJump");
     }
     setTimeout(function () {
-      character.classList.remove("animate");
+      character.classList.remove("animationJump");
     }, 500);
   }
   function control(e) {
@@ -60,9 +62,25 @@ function startGame() {
       counter = 0;
     } else {
       counter++;
-      let gameSpeed = document.getElementById("score");
-      gameSpeed.innerHTML = Math.floor(counter / 100);
+      document.getElementById("score").innerHTML = Math.floor(counter / 100);
     }
+    if(counter > 600){
+      block.style.animation = "block 1.5s infinite"
+    }
+    if(counter > 1000 ){
+      block.style.animation = "block 1s infinite"
+    }
+    if(counter > 1500){
+      block.style.animation = "block .8s infinite"
+    }
+    
+   
+    
+    // else {
+    //   console.log('test')
+    // }
+
+    
   }, 10);
 }
 
