@@ -70,8 +70,14 @@ function startGame() {
     if(counter > 1000 ){
       block.style.animation = "block 1s infinite"
     }
-    if(counter > 1500){
-      block.style.animation = "block .8s infinite"
+    if(counter > 1600){
+      block.style.animation = "block .9s infinite"
+    }
+    if(counter > 1900){
+      block.style.animation = "block .7s infinite"
+    }
+    if(counter > 3600){
+      block.style.animation = "block .5s infinite"
     }
     
    
