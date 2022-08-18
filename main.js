@@ -9,14 +9,15 @@ const jumpSound = new Audio();
 jumpSound.src =
   "http://docs.google.com/uc?export=open&id=1ANefDl3zStoPsOk_8fb7hTL0FcSnNVay";
 
+
 document.getElementById("splash").addEventListener("click", remove);
 if (document.getElementById("splash")) {
   block.style.animation = "none";
 }
 
-function removeSplash() {
+function remove() {
   let splash = document.getElementById("splash");
-  splash.removeSplash();
+  splash.remove();
   block.style.animation = "block 1.5s infinite";
   block.style.animationTimingFunction = "linear";
   startGame();
@@ -51,7 +52,6 @@ function startGame() {
       block.style.animation = "none";
       function reloadPage() {
         if (alert(`game over your score is ${Math.floor(counter / 100)}`)) {
-          console.log("alert");
         } else {
           window.location.reload();
         }
@@ -67,8 +67,6 @@ function startGame() {
 }
 
 //TODO: MAKE A IF STATEMENT THAT INCREASES THE SPEED OF THE BLOCK EVERY TIME THE SCORE IS DOUBLED
-//TODO: CHANGE THE IMGS INTO ACTUAL URL LINKS
-//TODO: PUT SOUND EFFECTS AND BACKGROUND MUSIC
 
 // if (counter.innerHTML === 5){
 //   block.style.animation = 'block 1s infinite '
