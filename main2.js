@@ -53,7 +53,7 @@ function startGame() {
       block.style.animation = "block .7s infinite";
     }
     if (counter > 3600) {
-      block.style.animation = "block .5s infinite";
+      block.style.animation = "block .6s infinite";
     }
   }, 10);
 }
