@@ -15,7 +15,7 @@ function startGame() {
     }
   
     document.addEventListener("keydown", control);
-    let detectCollision = setInterval(function () {
+     setInterval(function () {
       let characterTop = parseInt(
         window.getComputedStyle(character).getPropertyValue("top")
       );
