@@ -3,11 +3,9 @@ let block = document.getElementById("block");
 let counter = 0;
 
 const backgroundAudio = new Audio();
-backgroundAudio.src =
-  "./sound/techno-future-drone-main-9724 (1).mp3";
+backgroundAudio.src = "./sound/techno-future-drone-main-9724 (1).mp3";
 const jumpSound = new Audio();
-jumpSound.src =
-"./sound/jump-15984.mp3"
+jumpSound.src = "./sound/jump-15984-[AudioTrimmer.com].mp3";
 document.getElementById("splash").addEventListener("click", remove);
 if (document.getElementById("splash")) {
   block.style.animation = "none";
@@ -21,4 +19,3 @@ function remove() {
   startGame();
   backgroundAudio.play();
 }
-
